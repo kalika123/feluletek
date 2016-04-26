@@ -8,6 +8,10 @@ namespace Projekt
 {
     static class Program
     {
+
+        ///endre
+
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
