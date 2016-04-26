@@ -15,6 +15,8 @@ namespace Projekt
         public Main()
         {
             InitializeComponent();
+            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -25,6 +27,12 @@ namespace Projekt
         private void button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void setColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Color color = new Color();
+            color.Show();
         }
     }
 }
