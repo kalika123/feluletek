@@ -101,14 +101,7 @@
             this.button1.Text = "ADD NEW TASK\r\n";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(12, 73);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(383, 469);
-            this.checkedListBox1.TabIndex = 2;
+            
             // 
             // button2
             // 
