@@ -35,5 +35,11 @@ namespace Projekt
         {
 
         }
+
+        private void setColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Color color = new Color();
+            color.Show();
+        }
     }
 }
