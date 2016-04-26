@@ -33,15 +33,15 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fILEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eXITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.setColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hELPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gUIDEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.optionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listView2 = new System.Windows.Forms.ListView();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +70,21 @@
             this.eXITToolStripMenuItem.Name = "eXITToolStripMenuItem";
             this.eXITToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
             this.eXITToolStripMenuItem.Text = "EXIT";
+            // 
+            // optionToolStripMenuItem
+            // 
+            this.optionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.setColorToolStripMenuItem});
+            this.optionToolStripMenuItem.Name = "optionToolStripMenuItem";
+            this.optionToolStripMenuItem.Size = new System.Drawing.Size(60, 21);
+            this.optionToolStripMenuItem.Text = "Option";
+            // 
+            // setColorToolStripMenuItem
+            // 
+            this.setColorToolStripMenuItem.Name = "setColorToolStripMenuItem";
+            this.setColorToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.setColorToolStripMenuItem.Text = "SetColor";
+            this.setColorToolStripMenuItem.Click += new System.EventHandler(this.setColorToolStripMenuItem_Click);
             // 
             // hELPToolStripMenuItem
             // 
@@ -101,7 +116,6 @@
             this.button1.Text = "ADD NEW TASK\r\n";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            
             // 
             // button2
             // 
@@ -123,37 +137,22 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // listView1
+            // listView2
             // 
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(13, 65);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(382, 472);
-            this.listView1.TabIndex = 5;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.List;
-            // 
-            // optionToolStripMenuItem
-            // 
-            this.optionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.setColorToolStripMenuItem});
-            this.optionToolStripMenuItem.Name = "optionToolStripMenuItem";
-            this.optionToolStripMenuItem.Size = new System.Drawing.Size(60, 21);
-            this.optionToolStripMenuItem.Text = "Option";
-            // 
-            // setColorToolStripMenuItem
-            // 
-            this.setColorToolStripMenuItem.Name = "setColorToolStripMenuItem";
-            this.setColorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.setColorToolStripMenuItem.Text = "SetColor";
-            this.setColorToolStripMenuItem.Click += new System.EventHandler(this.setColorToolStripMenuItem_Click);
+            this.listView2.FullRowSelect = true;
+            this.listView2.Location = new System.Drawing.Point(13, 65);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(382, 472);
+            this.listView2.TabIndex = 5;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.List;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(407, 549);
+            this.Controls.Add(this.listView2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -183,6 +182,7 @@
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ToolStripMenuItem optionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem setColorToolStripMenuItem;
+        private System.Windows.Forms.ListView listView2;
     }
 }
 

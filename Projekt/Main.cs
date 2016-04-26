@@ -15,7 +15,6 @@ namespace Projekt
         public Main()
         {
             InitializeComponent();
-            
 
         }
 
