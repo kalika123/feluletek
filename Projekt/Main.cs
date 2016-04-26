@@ -40,5 +40,12 @@ namespace Projekt
             Color color = new Color();
             color.Show();
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+      
     }
 }

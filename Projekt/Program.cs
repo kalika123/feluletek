@@ -9,9 +9,6 @@ namespace Projekt
     static class Program
     {
 
-        ///endre
-        //nem én voltam hanem te
-
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

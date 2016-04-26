@@ -53,7 +53,7 @@
             this.hELPToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(407, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(407, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -62,13 +62,13 @@
             this.fILEToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eXITToolStripMenuItem});
             this.fILEToolStripMenuItem.Name = "fILEToolStripMenuItem";
-            this.fILEToolStripMenuItem.Size = new System.Drawing.Size(42, 21);
+            this.fILEToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.fILEToolStripMenuItem.Text = "FILE";
             // 
             // eXITToolStripMenuItem
             // 
             this.eXITToolStripMenuItem.Name = "eXITToolStripMenuItem";
-            this.eXITToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
+            this.eXITToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
             this.eXITToolStripMenuItem.Text = "EXIT";
             // 
             // optionToolStripMenuItem
@@ -92,19 +92,19 @@
             this.gUIDEToolStripMenuItem,
             this.aBOUTToolStripMenuItem});
             this.hELPToolStripMenuItem.Name = "hELPToolStripMenuItem";
-            this.hELPToolStripMenuItem.Size = new System.Drawing.Size(49, 21);
+            this.hELPToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.hELPToolStripMenuItem.Text = "HELP";
             // 
             // gUIDEToolStripMenuItem
             // 
             this.gUIDEToolStripMenuItem.Name = "gUIDEToolStripMenuItem";
-            this.gUIDEToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.gUIDEToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.gUIDEToolStripMenuItem.Text = "GUIDE";
             // 
             // aBOUTToolStripMenuItem
             // 
             this.aBOUTToolStripMenuItem.Name = "aBOUTToolStripMenuItem";
-            this.aBOUTToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.aBOUTToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.aBOUTToolStripMenuItem.Text = "ABOUT";
             // 
             // button1
@@ -161,6 +161,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";
             this.Text = "ToDo Task Manager";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
