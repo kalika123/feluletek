@@ -42,9 +42,11 @@ namespace Projekt
             color.Show();
         }
 
-        private void setColorToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Main_Load(object sender, EventArgs e)
         {
-          
+
         }
+
+      
     }
 }
