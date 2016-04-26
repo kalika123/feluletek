@@ -15,18 +15,7 @@ namespace Projekt
         public Main()
         {
             InitializeComponent();
-            DAL dal = DAL.getInstance();
-            if (!dal.isConnected())
-            {
-                MessageBox.Show("NEW CONNECT");
-                dal.connect();
-            }
-
-            dal.getTasks(1);
-
-            }
-
-
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -36,6 +25,11 @@ namespace Projekt
         private void button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void setColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }
