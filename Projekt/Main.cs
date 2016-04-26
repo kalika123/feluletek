@@ -17,14 +17,22 @@ namespace Projekt
             InitializeComponent();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Add_ToDo add_new_todo = new Add_ToDo();
+            add_new_todo.Show();
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Edit_ToDo edit_todo = new Edit_ToDo();
+            edit_todo.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
 
         }
+
     }
 }
