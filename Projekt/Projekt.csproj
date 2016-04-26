@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add_ToDo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_ToDo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Color.cs">
       <SubType>Form</SubType>
     </Compile>
